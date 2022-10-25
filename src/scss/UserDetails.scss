@@ -1,0 +1,56 @@
+@import "./Variables.scss";
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 85%;
+    margin: 2em;
+}
+
+.header-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: $table-border-color;
+    padding: 0% 0% 2% 0%;
+    width: 100%;
+    button{
+        border-radius: 10%;
+        border: $table-border-color;
+        background: rgba(245, 245, 245, 0.5);
+    }
+    h1{
+        margin: 0%;
+    }
+}
+
+.name-input-wrapper{
+    padding: 0% 32% 0% 0%;
+    display: flex;
+    flex-direction: column;
+    label{
+        font-weight: bold;
+    }
+    input{
+        :hover{
+            border-color: rgb(86, 143, 250);
+            box-shadow: 0 0 1% rgb(86, 143, 250);
+        }
+    }
+}
+
+.footer-wrapper{
+    display: flex;
+    flex-direction: row;
+    padding: 2% 0% 0% 0%;
+}
+
+.role-selection-wrapper{
+    div{
+        padding-top: 0%;
+    }
+    padding: 0% 0% 0% 0%;
+    border-left: $table-border-color;
+}
