@@ -17,6 +17,10 @@ div {
             padding: 0.25% 1% 0.25% 1%;
             color: rgba(150, 140, 129, 0.767);
         }
+        button:hover{
+            border-color: red;
+            color: red;
+        }
     }
 
     table {

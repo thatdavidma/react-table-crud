@@ -40,6 +40,12 @@
     input{
         width: 22em;
     }
+    input:hover{
+        box-shadow: 0 0 2px 2px rgba(99, 153, 255, 0.83);
+    }
+    input:focus{
+        box-shadow: 0 0 2px 2px rgba(99, 153, 255, 0.83);
+    }
 }
 
 .footer-wrapper{
