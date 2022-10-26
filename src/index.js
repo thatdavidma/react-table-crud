@@ -3,7 +3,7 @@ import ApolloClient, { gql } from 'apollo-boost';
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import UserList from './Components/UserList/UserList';
-import env from './env';
+import { graphQlConfig } from './env';
 import Store from './Redux/Store';
 import { Provider, useDispatch, useSelector } from 'react-redux';
 import { resetSelectedUsers } from './Redux/SelectionUsers';
@@ -11,11 +11,11 @@ import { resetCurrentUser } from './Redux/CurrentUser';
 import UserDetails from './Components/UserDetails/UserDetails';
 
 const client = new ApolloClient({
-  uri: env.GRAPHQL_ENDPOINT,
+  uri: graphQlConfig.GRAPHQL_ENDPOINT,
   request: operation => {
     operation.setContext({
       headers: {
-        'x-api-key': env.GRAPHQL_API_KEY,
+        'x-api-key': graphQlConfig.GRAPHQL_API_KEY,
       }
     })
   }

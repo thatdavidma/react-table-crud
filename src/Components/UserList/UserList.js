@@ -1,9 +1,9 @@
 import React from 'react'
 import UserElement from './UserElement'
 import './../../scss/UserList.scss'
+import { tableHeaders } from '../../Utils/Variables'
 
 function UserList({ listOfUsers, adjustSelectedUsers, deleteSelectedUsers }) {
-    const tableHeaders = ["", "EMAIL", "NAME", "ROLE"];
 
     return (
         <div>
